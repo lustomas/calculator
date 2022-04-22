@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', filen
 
 def dodaj(x, y): return x+y
 def odejmij(x, y): return x-y
-def pomnóż(x, y): return x*y
+def pomnoz(x, y): return x*y
 def podziel(x, y): return x/y
 def czy_liczba(s):
     try:
@@ -24,5 +24,5 @@ czy_liczba(num2)
 
 if choice == '1': logging.info("Dodaję %s i %s" % (num1, num2)), print("Wynik to", dodaj(num1, num2)),
 elif choice == '2': logging.info("Odejmuję %s i %s" % (num1, num2)), print("Wynik to",  odejmij(num1, num2))
-elif choice == '3': logging.info("Mnożę %s i %s" % (num1, num2)), print("Wynik to", pomnóż(num1, num2))
+elif choice == '3': logging.info("Mnożę %s i %s" % (num1, num2)), print("Wynik to", pomnoz(num1, num2))
 elif choice == '4': logging.info("Dzielę %s i %s" % (num1, num2)), print("Wynik to", podziel(num1, num2))
